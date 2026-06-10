@@ -58,6 +58,11 @@ export const acBridgeLinks = [
     href: 'https://ac-microcourses.readthedocs.io/en/latest/',
   },
   {
+    title: 'AC 证书：Autonomous Systems for Discovery',
+    use: 'U of T 继续教育学院正式证书（4 门微课 + capstone）：需要认证路径的学生从这里进入。',
+    href: 'https://learn.utoronto.ca/programs-courses/certificates/autonomous-systems-discovery',
+  },
+  {
     title: 'Hello World SDL',
     use: '第 0-1 周前导：理解最小闭环、硬件、Ax、MQTT、MongoDB 的工程语境。',
     href: 'https://ac-microcourses.readthedocs.io/en/latest/courses/hello-world/index.html',
@@ -66,5 +71,15 @@ export const acBridgeLinks = [
     title: 'AI and Materials Databases',
     use: '第 6-8 周外援：多目标、约束、多保真、批量和领域知识 BO。',
     href: 'https://ac-microcourses.readthedocs.io/en/latest/courses/data-science/overview.html',
+  },
+  {
+    title: 'self-driving-lab-demo（<$100 闭环）',
+    use: '想动手的学生的最低成本物理闭环；frugal twin 教学路线的入口。',
+    href: 'https://github.com/sparks-baird/self-driving-lab-demo',
+  },
+  {
+    title: 'awesome-self-driving-labs',
+    use: '社区资源总目录：D 轨道与第 13 周社区贡献的出口。',
+    href: 'https://github.com/AccelerationConsortium/awesome-self-driving-labs',
   },
 ] as const
