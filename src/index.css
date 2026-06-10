@@ -1,0 +1,45 @@
+:root {
+  --ink: #17251d;
+  --soft-ink: #52645a;
+  --muted: #748076;
+  --line: #dce4d6;
+  --paper: #f5f3e7;
+  --accent: #2f7254;
+  --mono: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+  --sans: "Aptos", "Segoe UI", "Noto Sans SC", sans-serif;
+  font-family: var(--sans);
+  color: var(--soft-ink);
+  background:
+    linear-gradient(90deg, rgba(23, 37, 29, 0.05) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(23, 37, 29, 0.04) 1px, transparent 1px),
+    var(--paper);
+  background-size: 28px 28px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+p {
+  margin: 0;
+  line-height: 1.65;
+}
