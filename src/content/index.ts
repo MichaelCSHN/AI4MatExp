@@ -8,6 +8,8 @@ export { epistemicTools } from './epistemicTools'
 export { acLinks, conversionCard } from './acBridge'
 export { projectTracks, gradeBreakdown } from './projectTracks'
 export { teacherKits, getTeacherKit } from './teacherKit'
+export { projectMilestones } from './projectMilestones'
+export { contributionTypes } from './contributions'
 
 export const coursePhases = [
   { name: '清醒', weeks: '1-2', question: '你现在在哪里？' },
@@ -26,16 +28,19 @@ export const coursePrinciples = [
 ] as const
 
 export const navigationItems = [
-  { id: 'dashboard', label: '课程驾驶舱', path: '/', icon: 'dashboard', badge: 'v0.2' },
+  { id: 'dashboard', label: '课程驾驶舱', path: '/', icon: 'dashboard', badge: 'v0.3' },
   { id: 'map', label: '13 周地图', path: '/weeks', icon: 'map', badge: '14' },
   { id: 'cases', label: '案例现场', path: '/cases', icon: 'cases', badge: '5' },
   { id: 'lab', label: 'GP/BO 实验台', path: '/lab', icon: 'lab', badge: 'Live' },
+  { id: 'workspace', label: '学生工作台', path: '/workspace', icon: 'workspace', badge: '填表' },
   { id: 'templates', label: '模板库', path: '/templates', icon: 'templates', badge: '11' },
   { id: 'projects', label: '项目轨道', path: '/projects', icon: 'projects', badge: '4' },
+  { id: 'contributions', label: '贡献归档', path: '/contributions', icon: 'contributions', badge: '3' },
   { id: 'quiz', label: '思考与试题', path: '/quiz', icon: 'quiz', badge: '判断' },
   { id: 'resources', label: 'AC 外援', path: '/resources', icon: 'resources', badge: 'MIT' },
-  { id: 'teacher', label: '教师材料包', path: '/teacher', icon: 'teacher', badge: 'Kit' },
 ] as const
+
+export const teacherNavigationItem = { id: 'teacher', label: '教师材料包', path: '/teacher', icon: 'teacher', badge: 'Kit' } as const
 
 export const heroMetrics = [
   { value: '13', label: '正式教学周' },

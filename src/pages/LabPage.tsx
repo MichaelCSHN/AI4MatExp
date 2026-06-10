@@ -5,9 +5,9 @@ export function LabPage() {
   return (
     <>
       <PageHeader
-        kicker="Judgment studio · 第 6 周旗舰工具"
+        kicker="GP/BO lab"
         title="GP/BO 实验台"
-        lead="先玩，后讲数学——这是教学法，不是流程。加点、观察 σ、拖动探索强度，建立对高斯过程与贝叶斯优化的真实直觉，然后再去看公式。"
+        lead="先加点，再看推荐。你可以接受系统建议，也可以点别处否决它。"
       />
       <section className="content-section lab-section">
         <GpBoLab />
@@ -23,10 +23,9 @@ export function LabPage() {
       </section>
       <section className="content-section closing-section">
         <p className="section-kicker">判断，不是执行</p>
-        <h2>"系统推荐你去那里。你信吗？为什么？"</h2>
+        <h2>系统推荐你去那里。你信吗？为什么？</h2>
         <p>
-          这个实验台不教你写 BO 代码——那是 vibe coding 五分钟的事。它训练的是：当 GP 给出一个推荐，
-          你能不能用领域知识判断这个推荐是否物理可行、是否值得相信。这是 AI 时代唯一不可外包的能力。
+          先说出你接受或否决的理由，再显示真实函数。错了也没关系，关键是知道自己为什么错。
         </p>
       </section>
     </>

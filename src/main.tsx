@@ -9,8 +9,10 @@ import { WeekDetail } from './pages/WeekDetail'
 import { CasesIndex } from './pages/CasesIndex'
 import { CaseDetail } from './pages/CaseDetail'
 import { LabPage } from './pages/LabPage'
+import { WorkspacePage } from './pages/WorkspacePage'
 import { TemplatesPage } from './pages/TemplatesPage'
 import { ProjectsPage } from './pages/ProjectsPage'
+import { ContributionsPage } from './pages/ContributionsPage'
 import { QuizPage } from './pages/QuizPage'
 import { ResourcesPage } from './pages/ResourcesPage'
 import { TeacherPage } from './pages/TeacherPage'
@@ -27,8 +29,10 @@ const router = createHashRouter([
       { path: 'cases', element: <CasesIndex /> },
       { path: 'cases/:id', element: <CaseDetail /> },
       { path: 'lab', element: <LabPage /> },
+      { path: 'workspace', element: <WorkspacePage /> },
       { path: 'templates', element: <TemplatesPage /> },
       { path: 'projects', element: <ProjectsPage /> },
+      { path: 'contributions', element: <ContributionsPage /> },
       { path: 'quiz', element: <QuizPage /> },
       { path: 'resources', element: <ResourcesPage /> },
       { path: 'teacher', element: <TeacherPage /> },

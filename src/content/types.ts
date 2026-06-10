@@ -147,3 +147,17 @@ export interface ProjectTrack {
   rubric: { dimension: string; points: number; note?: string }[]
   topics?: string[]
 }
+
+export interface ProjectMilestone {
+  week: number
+  title: string
+  deliverable: string
+  checkpoint: string
+}
+
+export interface ContributionType {
+  id: string
+  title: string
+  prompt: string
+  review: string
+}

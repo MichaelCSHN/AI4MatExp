@@ -105,7 +105,7 @@ export const readings: Reading[] = [
     id: 'bearman-2024',
     citation: 'Bearman et al., "Developing evaluative judgement for a time of generative artificial intelligence", Assess. Eval. High. Educ. 49, 893–905 (2024)',
     status: 'active',
-    note: '课程教学论根基：评价性判断是 AI 时代核心可评估学习产出。教师必读，学生选读。',
+    note: '评价性判断是 AI 时代的核心学习产出；想理解本课为什么重视"可辩护判断"时可读。',
     url: 'https://www.tandfonline.com/doi/full/10.1080/02602938.2024.2335321',
   },
   {

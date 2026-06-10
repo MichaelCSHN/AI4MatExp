@@ -11,7 +11,7 @@ export function ResourcesPage() {
       <PageHeader
         kicker="AC bridge · 外援与资源"
         title="AC 外援"
-        lead="AC Microcourses 负责'怎么跑起来'；本课负责'为什么这样设计、何时相信、哪里会失败、人的判断放在哪里'。颗粒度对齐 AC，重点难点处更详细。原则上不借用 AC 成品，通过链接引导学习。"
+        lead="需要补工程手感时，从这里去 AC。回来后填写转换卡：它帮你跑通了什么，又留下了什么判断问题。"
       />
 
       <section className="content-section">
@@ -44,7 +44,7 @@ export function ResourcesPage() {
 
         <section className="content-section">
           <h2 className="block-h">科学哲学最小工具箱</h2>
-          <p className="md-p">底层动机的落地：每个概念绑定触发体验和使用任务。无任务不进课。</p>
+          <p className="md-p">遇到判断卡住时，用这些词把问题说清楚。</p>
           <ul className="epi-list">
             {epistemicTools.map((t) => (
               <li key={t.id}>
@@ -69,6 +69,32 @@ export function ResourcesPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="content-section">
+        <h2 className="block-h">GitHub 提交与评审</h2>
+        <div className="github-flow">
+          <div>
+            <span>1</span>
+            <h3>提交</h3>
+            <p>每个里程碑用一个 PR 提交，标题包含周次、组号和交付物名称。</p>
+          </div>
+          <div>
+            <span>2</span>
+            <h3>标注</h3>
+            <p>使用 `milestone-week-*`、`track-a/b/c/d`、`needs-review`、`revised` 标签。</p>
+          </div>
+          <div>
+            <span>3</span>
+            <h3>评审</h3>
+            <p>同行评审写在 PR review 里；被评组 48 小时内回复接受、不接受和修改计划。</p>
+          </div>
+          <div>
+            <span>4</span>
+            <h3>归档</h3>
+            <p>第 13 周把最终展示、报告和贡献条目合并到课程归档分支。</p>
+          </div>
         </div>
       </section>
     </>

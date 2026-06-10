@@ -85,9 +85,11 @@ export function WeekDetail() {
         </section>
 
         <section className="content-section">
-          <h2 className="block-h">教师追问</h2>
-          <ul className="probe-list">
-            {w.teacherPrompts.map((p, i) => <li key={i}>{p}</li>)}
+          <h2 className="block-h">下课前确认</h2>
+          <ul className="think-list">
+            <li>我本周的判断任务能用一句话说清楚。</li>
+            <li>我知道本周产出会进入哪个项目交付物。</li>
+            <li>我能指出一个仍不确定、需要下周继续追的地方。</li>
           </ul>
         </section>
       </div>

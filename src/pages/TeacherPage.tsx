@@ -12,7 +12,7 @@ export function TeacherPage() {
       <PageHeader
         kicker="Teacher kit"
         title="教师材料包"
-        lead="教师视图与学生视图从一开始分离。教师材料不是答案，而是追问方式——课程的核心不是把学生引向标准答案，而是让学生能说明自己的判断依据和边界。"
+        lead="这里集中放置教师用材料：课前准备、触发脚本、流程、误区、追问、评分提示和风险提示。学生视图不展示这些追问脚本。"
       />
 
       <div className="teacher-tabs">
@@ -52,6 +52,13 @@ export function TeacherPage() {
         <ol className="num-list">{kit.flow.map((f, i) => <li key={i}>{f}</li>)}</ol>
       </section>
 
+      {w && (
+        <section className="content-section">
+          <h2 className="block-h">本周页面中的教师追问</h2>
+          <ul className="probe-list">{w.teacherPrompts.map((p, i) => <li key={i}>{p}</li>)}</ul>
+        </section>
+      )}
+
       <div className="two-col-grid">
         <section className="content-section">
           <h2 className="block-h">常见误区</h2>
@@ -71,7 +78,7 @@ export function TeacherPage() {
       )}
 
       <p className="verified-note">
-        教师材料包优先生成第 0、1、3、6、7、9、11 周（其余周次随课程推进补全）。每周开课前请做"素材时效性检查"——
+        教师材料包优先覆盖第 0、1、3、6、7、9、11 周（其余周次随课程推进补全）。每周开课前请做"素材时效性检查"——
         案例与文献状态会在学期尺度上变化。
       </p>
     </>

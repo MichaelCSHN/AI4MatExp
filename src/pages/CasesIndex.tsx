@@ -10,7 +10,7 @@ export function CasesIndex() {
       <PageHeader
         kicker="Case studio"
         title="案例现场"
-        lead="案例不是阅读材料，是辩论现场。判断力训练需要'何时该信'与'何时不该信'成对出现——所以这里既有争议案例，也有正面对照。"
+        lead="先看证据，先投票，先站队。形成自己的判断后，再揭晓真实世界怎么处理。"
       />
       <div className="case-grid">
         {cases.map((c) => (

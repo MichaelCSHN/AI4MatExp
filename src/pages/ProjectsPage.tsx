@@ -1,5 +1,5 @@
 import { PageHeader } from '../components/PageHeader'
-import { gradeBreakdown, projectTracks } from '../content'
+import { gradeBreakdown, projectMilestones, projectTracks } from '../content'
 
 export function ProjectsPage() {
   return (
@@ -9,6 +9,22 @@ export function ProjectsPage() {
         title="项目轨道与成绩"
         lead="一个学期是一个研究问题的完整旅程：研究问题卡 → 实验审计 → SDL 设计草图 → 分组项目 → 同行评审 → 公开展示。轨道的选择本身就是一个判断。"
       />
+
+      <section className="content-section">
+        <h2 className="block-h">项目时间线</h2>
+        <div className="milestone-list">
+          {projectMilestones.map((m) => (
+            <article key={`${m.week}-${m.title}`} className="milestone-row">
+              <span>第 {m.week} 周</span>
+              <div>
+                <h3>{m.title}</h3>
+                <p>{m.deliverable}</p>
+              </div>
+              <em>{m.checkpoint}</em>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <div className="track-grid track-grid-detail">
         {projectTracks.map((tr) => (
