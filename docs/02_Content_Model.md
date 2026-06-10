@@ -14,6 +14,7 @@
 | `templates` | 使用模板 |
 | `acLinks` | AC 外援链接 |
 | `readings` | 本周文献，每条带状态标记：`active` / `corrected`（已更正）/ `contested`（争议中）及最后核验日期 |
+| `epistemicTools` | 本周出场的认识论工具（来自"科学哲学最小工具箱"，设计方案 3.3）：概念、触发体验、使用任务 |
 | `teacherPrompts` | 教师追问 |
 
 ## Artifact
