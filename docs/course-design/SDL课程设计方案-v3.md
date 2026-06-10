@@ -1142,6 +1142,7 @@ PAVE-R 是本课程的原创协议，但它不悬空——三处与外部规范�
 | 课程 / 培训 | 可借鉴之处 | 本课吸收方式 |
 |------------|-----------|-------------|
 | U Toronto AC 证书 "Autonomous Systems for Discovery"（4 门微课 + capstone，2026 年活跃） | 颗粒度参照系；低成本 LED、传感器、Ax、MQTT、MongoDB 最小 SDL；多目标/约束/多保真/批量 BO；机器人控制与软件工程 | 正式前导与外援体系（见"与 AC Microcourses 的对齐与超越"一节）：逐周对齐 + 转换卡，不复制成品 |
+| **NIST/SEMATECH e-Handbook of Statistical Methods（DOE 主外援）** | 权威、免费、工程导向：实验设计（§5 Process Improvement）、测量系统、过程表征、不确定度分析，附完整案例 | 第 3-5 周 DOE 与数据可信度的方法学依据：审计每发现一个问题，到手册找到对应章节并引用；第 4 周用 §5.3 核对 AI 生成的设计表 |
 | MIT Design and Analysis of Experiments | DOE、ANOVA、区组、析因、响应面方法的系统训练 | 第 3-4 周加入 DOE 审计清单 |
 | Georgia Tech / Coursera Materials Data Sciences and Informatics | PSP linkage、材料数据、cyberinfrastructure | 第 5 周数据包 README 和 FAIR 诊断 |
 | Northwestern MAT_SCI 459 Materials Informatics | 材料数据库、表示、LLM、自主实验室、自动表征 | 第 8-10 周补材料表征和 L1-L6 接入口 |

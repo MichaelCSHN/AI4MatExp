@@ -28,6 +28,7 @@ AC 现状（2026-06 核验）：微课已固化为经 U of T 继续教育学院�
 
 | 资源 | 用途 |
 |------|------|
+| **NIST/SEMATECH e-Handbook of Statistical Methods**（itl.nist.gov/div898/handbook） | **DOE 部分的主外援**（第 3-5 周）：实验设计、测量系统、不确定度的权威方法学依据。手册负责"怎么设计才正确"，本课追问"你过去为什么没这样做、代价是什么"。审计报告中的每个问题都应引用手册对应章节 |
 | self-driving-lab-demo（sparks-baird，<$100 颜色匹配 SDL） | 想动手的学生的最低成本闭环 |
 | "Frugal twin" 综述（*Digital Discovery* 2024） | 低成本 SDL 教学路线的文献依据 |
 | awesome-self-driving-labs（GitHub） | 社区资源总目录，D 轨道与第 13 周社区贡献出口 |
