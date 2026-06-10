@@ -35,6 +35,13 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+        with:
+          # 首次运行时自动启用仓库的 GitHub Pages，无需手动到 Settings 开启。
+          enablement: true
+
       - name: Build
         run: npm run build
 
