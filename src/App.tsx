@@ -2,8 +2,10 @@ import { useState } from 'react'
 import { NavLink, Outlet } from 'react-router'
 import {
   BookOpenCheck,
+  Brain,
   ChevronLeft,
   ChevronRight,
+  Command,
   FlaskConical,
   GraduationCap,
   LayoutDashboard,
@@ -12,10 +14,10 @@ import {
   Map,
   ScrollText,
   Workflow,
-  Brain,
 } from 'lucide-react'
 import './App.css'
 import { navigationItems } from './content'
+import { CommandPalette } from './components/CommandPalette'
 
 const iconMap: Record<string, typeof LayoutDashboard> = {
   dashboard: LayoutDashboard,
@@ -77,6 +79,16 @@ function Sidebar() {
         })}
       </nav>
 
+      <button
+        className="collapse-button"
+        type="button"
+        title="命令面板（Ctrl+K）"
+        onClick={() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', ctrlKey: true }))}
+      >
+        <Command aria-hidden="true" />
+        {!collapsed && <span>Ctrl K</span>}
+      </button>
+
       <button className="collapse-button" type="button" onClick={toggle}>
         {collapsed ? <ChevronRight aria-hidden="true" /> : <ChevronLeft aria-hidden="true" />}
         {!collapsed && <span>收起导航</span>}
@@ -92,6 +104,7 @@ export default function App() {
       <main className="main-surface">
         <Outlet />
       </main>
+      <CommandPalette />
     </div>
   )
 }

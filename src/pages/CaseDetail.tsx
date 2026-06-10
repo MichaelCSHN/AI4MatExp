@@ -8,7 +8,23 @@ export function CaseDetail() {
   const { id } = useParams()
   const c = id ? getCase(id) : undefined
   const [revealed, setRevealed] = useState(false)
-  const [votes, setVotes] = useState<Record<string, string>>({})
+  // 立场记录持久化到 localStorage：第 7 周“揭晓前后判断对照”需要它跨会话存在。
+  const [votes, setVotes] = useState<Record<string, string>>(() => {
+    if (typeof window === 'undefined' || !id) return {}
+    try {
+      return JSON.parse(window.localStorage.getItem(`ai4matexp-votes-${id}`) ?? '{}')
+    } catch {
+      return {}
+    }
+  })
+
+  function castVote(qid: string, opt: string) {
+    setVotes((s) => {
+      const next = { ...s, [qid]: opt }
+      if (id) window.localStorage.setItem(`ai4matexp-votes-${id}`, JSON.stringify(next))
+      return next
+    })
+  }
 
   if (!c) return <PageHeader kicker="404" title="未找到该案例" />
 
@@ -89,7 +105,7 @@ export function CaseDetail() {
                   <button
                     key={opt}
                     className={`vote-opt ${votes[v.id] === opt ? 'chosen' : ''}`}
-                    onClick={() => setVotes((s) => ({ ...s, [v.id]: opt }))}
+                    onClick={() => castVote(v.id, opt)}
                   >
                     {opt}
                   </button>

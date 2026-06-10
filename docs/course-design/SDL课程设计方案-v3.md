@@ -2,7 +2,7 @@
 
 **课程设计方案 v3.3**
 
-> 课程网站：[michaelcshn.github.io/sdl-lecture](https://michaelcshn.github.io/sdl-lecture)  
+> 课程平台：[michaelcshn.github.io/AI4MatExp](https://michaelcshn.github.io/AI4MatExp/)（讲座版另见 [sdl-lecture](https://michaelcshn.github.io/sdl-lecture)）  
 > 适用对象：材料科学与工程方向研究生（亦适合高年级本科生）  
 > 学时：13 周教学周 × 每周 2 课时，共约 26 课时  
 > 本文档同时服务两类读者：**教师**（课程实施参考）和**学校管理方**（课程档案备查）
@@ -1201,6 +1201,6 @@ PAVE-R 是本课程的原创协议，但它不悬空——三处与外部规范�
 *本文档版本：v3.3*  
 *最后修订：2026 年 6 月 10 日*  
 *升级依据：docs/07_External_Landscape_Review_2026-06.md（2026-06 全面外部调研）*  
-*课程网站：[michaelcshn.github.io/sdl-lecture](https://michaelcshn.github.io/sdl-lecture)*
+*课程平台：[michaelcshn.github.io/AI4MatExp](https://michaelcshn.github.io/AI4MatExp/)*
 
 > 这门课的终极测试不是期末考试，而是学期结束一年后，你是否在做和一年前不同的事，以及你是否知道为什么不同。

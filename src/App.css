@@ -665,3 +665,30 @@
   .two-col-grid, .week-grid, .case-grid, .template-layout, .track-grid-detail, .ac-split, .principle-grid, .phase-grid-wide { grid-template-columns: 1fr; }
   .page-header { flex-direction: column; }
 }
+
+/* command palette */
+.cmdk-dialog {
+  position: fixed; inset: 0; z-index: 60;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding-top: 14vh; background: rgba(23, 37, 29, 0.35);
+}
+.cmdk-dialog [cmdk-root] {
+  width: min(560px, 92vw); background: #fffef9; border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 18px 60px rgba(23,37,29,0.25); overflow: hidden;
+}
+.cmdk-input {
+  width: 100%; border: none; border-bottom: 1px solid var(--line);
+  padding: 14px 16px; font: inherit; background: transparent; outline: none; color: var(--ink);
+}
+.cmdk-list { max-height: 50vh; overflow-y: auto; padding: 8px; }
+.cmdk-group [cmdk-group-heading] {
+  font-family: var(--mono); font-size: 11px; text-transform: uppercase;
+  color: var(--muted); padding: 8px 8px 4px;
+}
+.cmdk-item {
+  padding: 9px 10px; border-radius: 6px; font-size: 14px; color: var(--soft-ink); cursor: pointer;
+}
+.cmdk-item[data-selected='true'] { background: #17251d; color: #f8f6e9; }
+.cmdk-empty { padding: 16px; font-size: 13px; color: var(--muted); }
+.lab-btn-accept { background: #17251d; color: #f8f6e9; border-color: #17251d; font-weight: 700; }
+.lab-loop-note { font-size: 12px; color: var(--muted); }

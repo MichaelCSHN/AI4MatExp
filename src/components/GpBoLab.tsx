@@ -100,9 +100,23 @@ export function GpBoLab() {
             <button className={acq === 'ucb' ? 'on' : ''} onClick={() => setAcq('ucb')}>UCB</button>
             <button className={acq === 'ei' ? 'on' : ''} onClick={() => setAcq('ei')}>EI</button>
           </div>
+          <button
+            className="lab-btn lab-btn-accept"
+            onClick={() =>
+              setData((d) =>
+                [...d, { x: acqResult.argmaxX, y: hiddenTruth(acqResult.argmaxX) }].sort((a, b) => a.x - b.x),
+              )
+            }
+          >
+            接受推荐，做这次实验
+          </button>
           <button className="lab-btn" onClick={() => setShowTruth((s) => !s)}>{showTruth ? '隐藏' : '显示'}真实函数</button>
           <button className="lab-btn" onClick={() => setData([])}>清空</button>
         </div>
+        <p className="lab-loop-note">
+          这就是最小 SDL 闭环：模型拟合 → 采集函数推荐 → <b>你决定接受（按钮）或否决（点别处/不点）</b> → 测量入库 → 后验更新。
+          人的否决权就在这一步。
+        </p>
         <ul className="lab-questions">
           <li>σ（绿色带宽）什么时候最大？什么时候最小？为什么？</li>
           <li>把 β 拖到极大，推荐点跳到哪里？这代表什么实验策略？</li>
